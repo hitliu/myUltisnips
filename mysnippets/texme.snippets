@@ -1,0 +1,49 @@
+snippet myitem "Itemize" b
+\begin{itemize}
+\item $0
+\end{itemize}
+endsnippet
+
+
+snippet mybeamer "beamer frame" b
+\begin{frame}[t]{Approximate inference}
+
+	\begin{block} {John Wilder Tukey}
+	\vspace*{0.1cm}
+		\begin{columns}
+		\begin{column}{0.75\textwidth}
+			\centering
+			\begin{minipage}[c]{0.9\textwidth}
+			\alert{An approximate answer to the right problem}
+			is worth a good deal more than 
+			\textcolor{blue}{an exact answer to an approximate problem}.	
+			\end{minipage}
+		\end{column}
+
+
+		\begin{column}{0.25\textwidth}	
+			%\centering
+			\begin{tikzpicture}
+				\node[anchor=south west,inner sep=0] (pic) at (0,0) {\includegraphics[width=1.8cm]{./figure/JohnTukey.jpg}};
+				\node at (0.9,-0.2) {\tiny{1915 -- 2000}};
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+		
+	\end{block}
+
+	\vspace*{0.1cm}
+
+	\begin{block}{Definition from Wikipedia}
+	\vspace*{0.1cm}
+		\centering
+		\begin{minipage}[c]{0.9\textwidth}
+			\alert{Approximate inference} methods make it possible to learn realistic models from big data by \alert{trading off} \textcolor{blue}{computation time} for \textcolor{blue}{accuracy}, when \alert{exact} learning and inference are computationally \alert{intractable}.	
+		\end{minipage}
+	\vspace*{0.1cm}
+	\end{block}
+
+	
+\end{frame}
+
+endsnippet
